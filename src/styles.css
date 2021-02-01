@@ -1,0 +1,47 @@
+.row-active,
+.row-active td {
+  color: #fff;
+}
+.row-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.row-active:hover,
+.row-active:hover .row-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+}
+
+.chart-color-red,
+.chart-color-yellow,
+.chart-color-green,
+.chart-color-orange {
+  color: #fff;
+}
+
+.chart-color-red {
+  background-color: #ef4444;
+}
+.chart-color-yellow {
+  background-color: #facc15;
+}
+.chart-color-green {
+  background-color: #10b981;
+}
+.chart-color-orange {
+  background-color: #f97316;
+}
+
+.bg-orange-100 {
+  background-color: #ffedd5;
+}
+.bg-yellow-100 {
+  background-color: #fef9c3;
+}
+.bg-green-100 {
+  background-color: #dcfce7;
+}
+.bg-red-100 {
+  background-color: #fee2e2;
+}
