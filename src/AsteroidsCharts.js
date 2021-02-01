@@ -6,13 +6,13 @@ import ErrorNotification from "./ErrorNotification";
 export default function AsteroidsCharts() {
   const [showError, setShowError] = useState(false);
   const [chartsData, setChartsData] = useState([]);
-
   const location = useLocation();
   const history = useHistory();
 
-  const { selectedAsteroids } = location.state;
-
   useEffect(() => {
+    if (!location.state) return history.push("/");
+    const { selectedAsteroids } = location.state;
+
     if (selectedAsteroids.length > 0) {
       selectedAsteroids.forEach((asteroid) => {
         const { name, id } = asteroid;
